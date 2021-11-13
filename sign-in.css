@@ -1,0 +1,56 @@
+body{
+             background-color: rgb(243, 243, 242)
+         }
+        #logo{
+            /* border:1px solid red; */
+            width:18%;
+            height:80px;
+            margin:auto;
+            margin-bottom: 0px;;
+        }
+        #logo > img{
+            height:100%;
+            width:100%;
+        }
+      
+        .inputfilled{
+            width:90%;
+            height:26px;
+        }
+        #btn{
+            width:90%;
+            height:30px;
+            background-color: #003153;
+            color:white;
+            border-radius: 5px;
+        }
+        #btn:hover{
+            font-weight: bold;;
+        }
+         #box{
+            width:25%;
+            height:360px;
+            margin:auto;
+            margin-top: 0px;;
+            border:1px solid rgb(134, 134, 134);
+            padding:15px;
+            padding-top: 0px;;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        }
+        #create{
+            width:90%;
+            height:30px;
+              border-radius: 5px;
+              border:1px solid #003153;
+              background-color: white;
+              color: #003153;
+              text-align: center;
+        }
+        #create:hover{
+           
+           font-weight: bold;
+        }
+        #new{
+            text-align: center;
+            color:rgb(133, 128, 128)
+        }

@@ -1,0 +1,141 @@
+body{
+            width:1300px;
+            /* height:600px;  */
+            background-color: rgb(243, 243, 242)
+         }
+        #logo{
+            /* border:1px solid red; */
+            width:18%;
+            height:76px;
+            margin:auto;
+        }
+        @media (min-width:0px) and (max-width:500px){
+            #logo{
+                margin-top: 450px;
+                margin-bottom: 0px;
+                height:100px;
+            }
+        }
+        @media (min-width:500px) and (max-width:800px){
+            #logo{
+                 margin-top: 50px;
+                 /* height:100px; */
+            }
+         }
+          @media (min-width:800px){
+            #logo{
+                 /* margin-top: 50px; */
+                 /* height:100px; */
+            }
+         }
+
+
+        #logo > img{
+            height:90%;
+            width:100%;
+        }
+      
+        .inputfilled{
+            width:90%;
+            height:26px;
+        }
+        #btn{
+            width:90%;
+            height:30px;
+            background-color: #003153;
+            color:white;
+            border-radius: 5px;
+        }
+        #btn:hover{
+        font-weight: bold;;
+        }
+        #box{
+            width:25%;
+            height:560px;
+            margin:auto;
+            border:1px solid rgb(134, 134, 134);
+            padding:10px;
+            padding-top: 0px;;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(32, 13, 13, 0.3) 0px 3px 7px -3px;
+        }
+
+        @media (min-width:0px) and (max-width:500px){
+          #box{
+              /* margin-top: 200px; */
+              width:55%;
+              height:1000px;
+              justify-content: center;
+          }
+          #box>input
+          {
+            font-size: 34px;;
+            height:60px;
+
+          }
+          #box>label
+          {
+               font-size: 34px;;
+               font-weight: bold;
+          }
+          #box>h2
+          {
+            font-size: 34px;;   
+          }
+          #box>#btn
+          {
+               font-size: 34px;;
+               height:60px;
+          }
+          div>p{
+              font-size: 34px;;
+          }
+        
+        }
+         @media (min-width:500px) and (max-width:800px){
+             #box{
+              /* margin-top: 200px; */
+              width:45%;
+              height:1100px;
+              justify-content: center;
+          }
+              #box>input
+          {
+            font-size: 34px;;
+            height:60px;
+          }
+          #box>label
+          {
+               font-size: 34px;;
+          }
+          #box>h2
+          {
+            font-size: 34px;;   
+          }
+          #box>#btn
+          {
+               font-size: 34px;;
+               height:60px;
+          }
+          div>p{
+              font-size: 34px;;
+          }
+
+         }
+
+
+          @media (min-width:800px)  {
+          
+        }
+
+
+        span{
+            color:#003153;
+        }
+        p>span>a{
+            text-decoration: none;
+            color:#003153;
+
+        }
+        p>span>a:hover{
+            font-weight: bold;;
+        }

@@ -1,2 +1,2 @@
-# Zappos
-clone project 
+# zappos
+ E-commerce website
