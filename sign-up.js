@@ -6,7 +6,7 @@
 
     function signUp(event)
    {
-    event.preventDefault()
+      event.preventDefault();
    
      var name=document.getElementById("name").value;
      var email=document.getElementById("email").value;
@@ -19,14 +19,14 @@
          Name:name,
          Email:email,
          passwords:pass,
-         ReEnter:Re,
+         Re_Enter:ReEnter,
 
      };
 
-     //console.log(user)
+     console.log(user)
      userArr.push(user);
      console.log(userArr);
-       localStorage.setItem,("userData",JSON.stringify(userArr));
+    localStorage.setItem("userData",JSON.stringify(userArr));
 
 
    

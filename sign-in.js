@@ -1,5 +1,6 @@
  document.querySelector("button").addEventListener("click",signIn);
-    var regdUser= JSON.parse(localStorage.getItem("userData"));
+var regdUser = JSON.parse(localStorage.getItem("userData"));
+    console.log(regdUser)
     function signIn()
     {
         var email= document.querySelector("#email").value;
@@ -10,14 +11,17 @@
             window.location.href="home_page.html";
         }
         else{
-            for(var i=0;i<regdUser.length;i++)
+            for (var i = 0; i < regdUser.length; i++)
             {
-                if(regdUser[i].emailAddress == email &&
-                regdUser[i].passWord==pass)
+                if(regdUser[i].Email == email &&
+                regdUser[i].passwords==pass)
                 {
                   window.location.href="product_page.html"
+                  console.log()
                 }
+               
             }
+
         }
     }
 
