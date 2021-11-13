@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart_page</title>
+</head>
+<style>
+    
+     body{
+            font-family: sans-serif;
+        }
+      #container1{
+          width:100%;
+          height:50px;
+          border-top:1px solid rgb(218, 214, 214);
+          display:flex;
+          width:1350px;
+
+      }
+      #container1>div{
+          border-right:1px solid rgb(218, 214, 214);
+          width:10%;
+           
+      }
+      #container1>div>img{
+          width:100%;
+          height:100%;
+          margin-top: -10px;
+          margin-left: -10px;
+      }
+      #zap_logo:hover{
+          background-color: rgb(27, 27, 161);
+      }
+      #vrsnl_logo>p{
+          
+          color:gray;
+          font-weight: bold;
+          text-align: center;
+           font-size: 20px;
+           margin-top: 10px;
+           
+           
+      }
+       #vrsnl_logo>p:hover{
+           color: black;
+          
+       }
+       #container2{
+          width:100%;
+          height:50px;
+          
+          display:flex;
+           width:1350px;
+
+      }
+      #Cust{
+         
+          width:15%;
+          
+      }
+      #select{
+          
+          height:100%;
+          width:100%;
+          background-color: rgb(34, 81, 184);
+          color:white;
+          font-weight: bold;
+          padding:10px;
+          border-right:3px solid black;
+      }
+      option{
+          background-color: white;
+          color:rgb(20, 20, 36);
+      }
+      #Cust~div{
+          width:100%;
+          color: white;
+          background-color: rgb(34, 81, 184);
+          padding-left: 20px;
+      }
+      #container3{
+          width:100%;
+          height:100px;
+          /* border:1px solid rgba(146, 142, 142, 0.897); */
+          /* padding:30px; */
+           
+          display:flex;
+          column-gap: 0px;
+          width:1350px;
+      }
+      #container3>#logo2{
+          /* border:1px solid red; */
+            width:10%;
+
+      }
+      #textarea{
+          /* border:1px solid rgb(50, 153, 46); */
+          padding:20px;
+          padding-right: 0px;
+          
+      }
+      #text{
+         justify-content: center;
+        margin-top:0px;
+        color: rgb(10, 10, 10);
+        
+      }
+
+      #logo2>img{
+          width:100%;
+          height:80%;
+          padding:3px;
+      }
+      #search{
+          width:5%;
+          height:9%;
+          padding:20px;
+          margin-top: 20px;
+          color:white;
+          background-color: rgb(5, 32, 107);
+      }
+      #search:hover{
+          background-color: #2c78aa;
+      }
+      #cart{
+          width:10%;
+          margin: auto;
+          margin-right: 30px;
+          height:50%;
+         display:flex;
+          border: 1px solid green;
+          border-radius: 5px;
+      }
+      #imgDiv>img{
+          padding:5px;
+          width:80%;
+          height:70%;
+      }
+      #imgDiv~div{
+         text-align: center;
+         padding:13px;
+
+      }
+       #imgDiv~div>a{
+           text-decoration: none;
+           color:rgb(11, 51, 11)
+       }
+     #cart:hover{
+         background-color: rgb(168, 241, 168);
+          color:rgb(11, 51, 11)
+     }
+     #container4{
+         display:flex;
+         column-gap: 20px;
+         padding:10px;
+         height:25px;
+         /* border: 1px solid red; */
+         background-color: rgb(243, 240, 240);
+         width:1350px;
+     }
+   .category{
+       width:7%;
+       height:45px;
+       color:rgb(8, 51, 51);
+       background-color:rgb(243, 240, 240) ;
+       border:1px solid rgb(243, 240, 240);
+        margin-top: -10px;
+        font-weight: bold;
+      
+   }
+   .category:hover{
+        border-bottom:1px solid  rgb(8, 51, 51);
+   }
+   #Login{
+       color:rgb(8, 51, 51);
+       width:45%;
+       height:45px;
+       margin-left: 200px;
+       margin-top: -10px;
+       font-size: 17px;
+       border: 1px solid whitesmoke;
+      font-weight: bold;
+
+       
+   }
+   #Login:hover{
+       border-bottom:1px solid  rgb(8, 51, 51);
+   }
+   #container5{
+       /* width:98.5%; */
+       height:40px;
+       /* border:1px solid red; */
+       background-color: rgb(221, 235, 235);
+       text-align: center;
+       padding:10px;
+       width:1350px;
+
+   }
+    #container5>div~div{
+        text-decoration: underline;
+        font-weight: bold;
+    }
+    #container6{
+        width:100%;
+        height:220px;
+        margin-bottom: 60px;;
+        /* border:1px solid red; */
+    }
+        #footer{
+             margin-top: 100px;;
+              /* border:1px solid red; */
+              height:730px;
+              background-color: #0f4366;
+              width:1360px;;
+          }
+           #footer>div{
+               height:150px;
+               background-color:rgb(15, 59, 85) ;
+               color:white;
+           }
+           form{
+               padding:30px;
+           }
+           form>input+input{
+               border:1px solid white;
+               background-color: rgb(15, 59, 85) ;
+               color:white;
+               text-align: center;
+               font-size: 16px;
+               font-weight: bold;;
+               
+           }
+           form>input+input:hover{
+               background-color: white;
+               color:black
+           }
+           form>label{
+                margin-top: 10px;
+           }
+           input{
+               border-radius: 5px;;
+               height:40px;
+               width:200px;
+               margin-top: 5px;;
+           }
+           form~div{
+               
+               /* border:1px solid green; */
+               display:flex;
+               column-gap: 150px;
+
+           }
+           form~div>div>p{
+               /* width:150%; */
+                 
+               width:200px;
+               /* border:1px solid red; */
+               font-weight: bold;
+               font-size: 16px;;
+               margin-left: 20px;;
+               
+           }
+            form~div>div>div{
+                /* border:1px solid red; */
+                padding:2px;
+                margin:2px;
+                margin-left: 20px;;
+            }
+             form~div>div>div>span{
+                 font-weight: bold;;
+             }
+            form~div>:last-child>div{
+                color:white;
+                width:260px;
+                height:190px;
+                border:1px solid rgb(12, 74, 109) ; ;
+                margin-left: -50px;
+                margin-top: 20px;
+                background-color:rgb(13, 90, 134) ;
+                padding:10px;
+                border-radius: 5px;
+
+            
+            
+            }
+            form~div>:last-child>div>input{
+             background-color:rgb(13, 90, 134) ; 
+             border:1px solid white;
+             color:white;
+             text-align: center;
+            }
+             form~div>:last-child>div>input:hover{
+                 background-color: white;
+                 color:black
+             }
+             form~div>:last-child>:last-child
+             {
+                    background-color:#0f4366;
+                    height:100px;
+                    /* border:1px solid red; */
+
+             }
+             
+               form~div>:last-child>:last-child>div{
+                  width:80%;
+                  height:60%;
+               }
+              form~div>:last-child>:last-child>div>img{
+                  width:90%;
+                  height:98%;
+              }
+              #outer_box{
+                  width:1360px;
+                  border:1px solid whitesmoke;
+                  display:flex;
+              }
+
+        #product{
+        margin:5% 5% 5% 5%;
+        /* padding:20px; */
+        /* border:1px solid violet; */
+        height:700px;
+        width:600px;
+        display:grid;
+        grid-template-columns:20%;
+        grid-template-rows: 30%;;
+        grid-gap:5%;
+        justify-content: center;
+         box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+        padding:10px;
+
+    
+    }
+    #detail{
+         /* border:1px solid red; */
+          height:800px;
+         width:600px; 
+         background-color: rgb(252, 252, 248); 
+         box-shadow: rgba(174, 174, 177, 0.15) 0px 48px 100px 0px;
+        padding:10px;
+    }
+    #heading{
+        margin-left: 150px;
+    }
+
+    img{
+        width:95%;
+        height:90%;
+        /* margin:40px; */
+        padding:10px;
+        /* border:1px solid blue; */
+        
+    }
+    #img_div{
+        height:530px;
+        width:430px;
+        background-color: lightblue;
+        margin-left: -200px;;
+        /* border:1px solid green; */
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        
+    
+    }
+    #detail_div{
+        margin-left: -200px;;
+        margin-top: 290px;;
+        border:1px solid lightgray;
+        width:430px;
+        height:150px;
+        background-color: whitesmoke;
+    }
+    #heading{
+      /* border:1px solid whitesmoke; */
+    }
+    
+    #prd_detail{
+      /* border:1px solid yellow; */
+      margin:10px;
+
+
+
+    }
+    
+
+    #shipping{
+        border:1px solid grey;
+        background-color:rgb(72, 182, 219) ;
+        color:white;
+        width:15%;
+        height:3%;
+        padding:8px;
+        margin:10px;
+        border-radius: 2px;;
+        font-weight: bold;;
+    }
+    #shipping:hover{
+      background-color: rgb(99, 173, 175);
+    }
+    #select1{
+            /* border:1px solid green; */
+            width: 30%;height:5%;
+            background-color: lightgrey;
+            margin:10px;
+    }
+    #select1:hover{
+        font-weight: bold;;
+      background-color: lightgray;
+      border:1px solid rgb(78, 76, 76);
+    }
+    #find{
+          /* border:1px solid green; */
+          color:rgb(105, 167, 218);
+           margin:10px;
+           font-size: 13px;;
+           text-decoration: underline;
+    }
+    #checkout{
+          /* border:1px solid green; */
+           margin:10px;
+           width: 30%;
+           height:4%;
+           border:1px solid lightgray;
+    }
+    #checkout:hover{
+      font-weight: bold;;
+      background-color: lightgray;
+      border:1px solid rgb(78, 76, 76);
+    }
+    #offer{
+           border:1px solid lightgray;
+            margin:10px;
+            font-family:cursive;
+            font-size: 13px;;
+            color:rgb(14, 14, 94);
+            width:60%;
+            border-radius: 10px;;
+            padding:5px;
+            background-color: gainsboro;
+    }
+    #connect_div{
+             
+              width:40%;
+              height:10%;
+              margin:10px;
+
+    }
+    #connect1{
+           /* border:1px solid red; */
+           width:98%;
+           height:90%;
+           
+
+    }
+    #alex_div{
+          /* border:1px solid blue; */
+          width:40%;
+          height:30%;
+           margin:15px;
+           margin:auto;
+    }
+    #alex{
+         /* border:1px solid green; */
+         
+    }
+
+
+
+    </style>
+<body>
+     <!-- container1 -->
+    <div id="container1">
+        <div id="zap_logo">
+           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQu2x-B-DBckAzrFzU2zgjNidM83Sy_pG96dTzodm7SKIlYJsKf_won9PBPwDXR4AdbZ8Y&usqp=CAU" alt="logo"/>
+        </div>
+        <div id="vrsnl_logo">
+            <!-- <img src="https://www.trademarkelite.com/ashx/createmark.ashx?tm=VRSNL" alt="logo"/> -->
+         <p>VrsnL</p>
+        </div>
+    </div>
+
+    <!-- container2 -->
+    <div id="container2">
+        <div id="Cust">
+            <select id="select">
+                <option value="">Customer Service</option>
+                <option value="">Contact info</option>
+                <option value=""> FAQ</option>
+                <option value="">Give Us Feedback </option>
+            </select>
+        </div>
+        <div id="number">
+             <p>Available 24/7 at (800) 927-7671</p>
+        </div>
+    </div>
+
+    <!-- container3 -->
+     <div id="container3">
+         <div id="logo2">
+             <img src="https://m.media-amazon.com/images/G/01/Zappos/MysteryDeals2021/2021-ZAPPOS-HOLIDAY-HEADER-LOGO.svg" alt="logo"/>
+         </div>
+
+         <div id="textarea">
+             <textarea id="text" rows="3" cols="70" >
+                 KAJAL,search for shoes, clothes, etc
+             </textarea>
+
+         </div>
+         <input id="search" type="text" value="search"/>
+          <div id="cart">
+             
+              <div id="imgDiv">
+                  <img src="https://image.flaticon.com/icons/png/512/126/126083.png"/>
+                  
+                </div>
+                 <div>
+                     <a href="cart.html">My Cart</a>
+                </div>
+        </div>
+              
+     </div>
+
+     <!-- container4 -->
+     <div id="container4">
+         
+        
+         <select  class="category">
+             <option>New</option>
+         </select>
+         <select id="women" class="category">
+             <option value="women">Women</option>
+             <option value="">Shoes</option>
+             <option value="">Clothing</option>
+             <option value="">Accessories & more</option>
+             <option value="">Gift card</option>
+             <option value="">Featured</option>
+
+         </select>
+        <select class="category">
+            <option>Men</option>
+        
+        </select>
+        
+         <select class="category">
+             <option>Kids</option>
+         </select>
+         
+        
+         <select class="category">
+             <option>Departments</option>
+         </select>
+         
+        
+         <select class="category">
+             <option>Brands</option>
+         </select>
+         
+         
+         <select class="category">
+             <option>sales</option>
+         </select>
+         
+         
+         <select class="category">
+              <option>clothings</option>
+         </select>
+        
+
+        <a href="sign-up.html"><input  id="Login" type="submit" value="sign In / Register"></a>
+        
+     </div>
+   
+    <!-- container5 -->
+    <div id="container5">
+      <div>We love new categories! Check out Bedding Sets, Blankets, Throws and more!</div>
+      <div>Browse Wedding</div>
+    </div>
+
+    <!-- header end -->
+
+         <h3 id="heading">Items In Cart</h3>
+        <div id="outer_box">
+        
+         <div id="product"></div>
+
+        <div id="detail">
+            <h2 id="prd_detail">Product Detail</h2>
+            <div id="shipping">Ships Free</div>
+            <select id="select1">
+                <option value="">Choose Women Size</option>
+                <option value="">10</option>
+               <option value="">12</option>
+                <option value="">13</option>
+            </select>
+            <p id="find">Can't find your size?</p>
+            <button id="checkout"><a href="checkout.html">Proceed to Checkout</a></button>
+            <p id="offer">Free upgraded shipping and return with amazon prime</p>
+            <div id="connect_div">
+                <img src="https://t4.ftcdn.net/jpg/02/85/44/69/360_F_285446949_eVkqwuNjPXLwR72oq0ctYltBCIflCbwh.jpg" id="connect1"/>
+            </div>
+            <div>
+               
+                <div id="alex_div">
+                    <img src="https://www.zappos.com/boutiques/5040/ALEXEVENINGS_header021319.gif" id="alex"/>
+                </div>
+                <p>Fusing with endless styles, the Alex Evenings™ Tea Length Sleeveless Cowl Neckline Dress features a cowl neckline, chiffon materials, pull-on construction, cut-off sleeves design, all over floral jacquard inspired design, and a ruffled ankle-length skirt hemline.</p>
+                <ul>
+                    <li>SKU: #9588253</li>
+                    <li>86% polyester, 12% nylon, 2% spandex.</li>
+                    <li>Hand wash warm, line dry.</li>
+                    <li>Imported.</li>
+                </ul>
+                   <p>View Zappos.com GLossary of Terms</p>
+                   <p>Find something wrong in the description?Help us fix Rreport An Error</p>
+            </div>
+
+        </div>
+
+    </div>
+
+     
+          <!-- footer -->
+    <div id="footer">
+        <div>
+          <form>
+              <label>Make your inbox happy by joining our exclusive newsletter</label>
+              <br>
+              <label>Email</label>
+              <br>
+              <input type="text" placeholder="Email address"/>
+              <input type="text" value="SIGN UP TODAY"/>
+          </form>
+
+
+            <div>
+                <div>
+                    <p>Explore Zappos</p>
+                    <div>Brands</div>
+                    <div>Clothing</div>
+                    <div>The Style Room</div>
+                    <div>Eyewear</div>
+                    <div>New Arrivals</div>
+                    <div>Outdoor</div>
+                    <div>Rideshop</div>
+                    <div>Running</div>
+                    <div>Jackets</div>
+                    <div>Leather Jackets</div>
+                    <div>Rain Jackets</div>
+                    <div>Shoes</div>
+                    <div>Watches</div>
+                    <div>Wedding</div>
+                    <div>Denim Jackets</div>
+                    <div>Zappos Adaptive</div>
+                    <div>Education & Military Program</div>
+                    <div>All Departments</div>
+                    
+                </div>
+                  
+
+                <div>
+                    <p><span>Customer Service</span></p>
+                    <div>FAQS</div>
+                    <div>Contact Info</div>
+                    <div>Ayuda en espanol</div>
+                    <div>Shipping And Returns</div>
+                    <div>About Proposition 65</div>
+                    <br>
+                    <br>
+                    <div><span>Fit Info</span></div>
+                    <br>
+                    <div>Measurement Guide</div>
+                    <div>Size Conversation</div>
+                    <div>Measure Your Bra Size</div>
+                   
+
+                </div>
+
+                <div>
+                    <p>About Zappos</p>
+                    <div>About</div>
+                    <div>Beyond The Box Blog</div>
+                    <div>Zappos for Goods</div>
+                    <div>Tours</div>
+                    <div>Get the Zappos Mobile app</div>
+                    <div>Amazon Prime Benefits</div>
+                    <div>Zappos VIP Benefits</div>
+                    <div>Powered by Zappos</div>
+                    <div>Coupons</div>
+                    <div>Accessibilty statemnet</div>
+                    <div>Accessibilty Survey</div>
+                    <div>Resources</div>
+                    <div>Associates Program</div>
+                    <div>Jobs</div>
+                    <div>Press Kit</div>
+                    <div>Glossary of Terms</div>
+                    <div>Site Map</div>
+                   
+                </div>
+
+                <div>
+                   
+                    <div>
+                        <p>Your Voice Matter</p>
+                        <p>We'd love to learn more about your shopping experiences on Zappos.com and how we can improve!</p>
+                        <input type="text" value="TAKE SURVEY"/>
+                        
+
+                    </div>
+                    <div> 
+                        <p>Connect With Us</p>
+                        <div>
+                            <img src="https://t4.ftcdn.net/jpg/02/85/44/69/360_F_285446949_eVkqwuNjPXLwR72oq0ctYltBCIflCbwh.jpg"/>
+                        </div>
+                    </div>
+                   
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+</body>
+</html>
+<script>
+
+let prod = document.getElementById("product");
+//.get the data from local storage
+
+let cart=JSON.parse(localStorage.getItem("cart"))
+console.log("cart",cart);
+
+function showProducts(){
+
+cart.forEach(function(product){
+
+  //  console.log(product.name);
+
+let img_div = document.createElement("div");
+
+
+img_div.setAttribute("id","img_div")
+
+// img_div.style.height="400px";
+// img_div.style.width="250px";
+// img_div.style.backgroundColor="rgb(157, 179, 207)"
+
+// img_div.style.border="1px solid grey";
+
+let img = document.createElement("img");
+
+img.src=product.img;
+
+let product_price = document.createElement("p");
+
+product_price.textContent=product.price;
+
+
+
+let product_name = document.createElement("p");
+
+product_name.textContent= product.name;
+img_div.append(img);
+
+var detail_div=document.createElement("div")
+detail_div.setAttribute("id","detail_div")
+detail_div.append(product_name,product_price)
+
+
+let addtocart_btn=document.createElement("button");
+
+ addtocart_btn.innerText="Buy Now";
+
+addtocart_btn.onclick=function(){
+    addtocart(product);
+};
+
+detail_div.append(product_name,product_price,addtocart_btn);//html element
+
+prod.append(img_div,detail_div)
+});
+}
+showProducts();
+// let elm = document.getElementById("product")
+
+// let arr = elm.filter.price(function(){
+//   console.log(price)
+// })
+// let aw = elm.getElementsByTagName("p")
+// console.log(aw)
+// var totalcart =(Number(aw[1].textContent))
+// var dic = 30
+// function disc(totalcart,dic){
+
+  
+//   var dic =totalcart * dic/100
+//   var total = totalcart -dic
+//   return total
+
+// }
+// var a = (disc(totalcart,dic))
+// console.log(a)
+
+
+
+
+//var a = document.getElementsByClassName("abc")
+
+
+
+
+
+</script>

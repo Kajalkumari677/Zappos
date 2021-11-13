@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Women</title>
+    <style>
+        body{
+            font-family: sans-serif;
+        }
+      #container1{
+          width:100%;
+          height:50px;
+          border-top:1px solid rgb(218, 214,214) ;
+          display:flex;
+          width:1350px;
+
+      }
+      #container1>div{
+          border-right:1px solid rgb(218, 214, 214);
+          width:10%;
+           
+      }
+      #container1>div>img{
+          width:100%;
+          height:100%;
+      }
+      #zap_logo:hover{
+          background-color: rgb(27, 27, 161);
+      }
+      #vrsnl_logo>p{
+          
+          color:gray;
+          font-weight: bold;
+          text-align: center;
+           font-size: 20px;
+           margin-top: 10px;
+           
+           
+      }
+       #vrsnl_logo>p:hover{
+           color: black;
+          
+       }
+       #container2{
+          width:100%;
+          height:50px;
+          
+          display:flex;
+           width:1350px;
+
+      }
+      #Cust{
+         
+          width:15%;
+          
+      }
+      #select{
+          
+          height:100%;
+          width:100%;
+          background-color: rgb(34, 81, 184);
+          color:white;
+          font-weight: bold;
+          padding:10px;
+          border-right:3px solid black;
+      }
+      option{
+          background-color: white;
+          color:rgb(20, 20, 36);
+      }
+      #Cust~div{
+          width:100%;
+          color: white;
+          background-color: rgb(34, 81, 184);
+          padding-left: 20px;
+      }
+      #container3{
+          width:100%;
+          height:100px;
+          /* border:1px solid rgba(146, 142, 142, 0.897); */
+          /* padding:30px; */
+           
+          display:flex;
+          column-gap: 0px;
+          width:1350px;
+      }
+      #container3>#logo2{
+          /* border:1px solid red; */
+            width:10%;
+
+      }
+      #textarea{
+          /* border:1px solid rgb(50, 153, 46); */
+          padding:20px;
+          padding-right: 0px;
+          
+      }
+      #text{
+         justify-content: center;
+        margin-top:0px;
+        color: rgb(10, 10, 10);
+        
+      }
+
+      #logo2>img{
+          width:100%;
+          height:80%;
+          padding:3px;
+      }
+      #search{
+          width:5%;
+          height:9%;
+          padding:20px;
+          margin-top: 20px;
+          color:white;
+          background-color: rgb(5, 32, 107);
+      }
+      #search:hover{
+          background-color: #2c78aa;
+      }
+      #cart{
+          width:10%;
+          margin: auto;
+          margin-right: 30px;
+          height:50%;
+         display:flex;
+          border: 1px solid green;
+          border-radius: 5px;
+      }
+      #imgDiv>img{
+          padding:5px;
+          width:80%;
+          height:70%;
+      }
+      #imgDiv~div{
+         text-align: center;
+         padding:13px;
+
+      }
+       #imgDiv~div>a{
+           text-decoration: none;
+           color:rgb(11, 51, 11)
+       }
+     #cart:hover{
+         background-color: rgb(168, 241, 168);
+          color:rgb(11, 51, 11)
+     }
+     #container4{
+         display:flex;
+         column-gap: 20px;
+         padding:10px;
+         height:25px;
+         /* border: 1px solid red; */
+         background-color: rgb(243, 240, 240);
+         width:1350px;
+     }
+   .category{
+       width:7%;
+       height:45px;
+       color:rgb(8, 51, 51);
+       background-color:rgb(243, 240, 240) ;
+       border:1px solid rgb(243, 240, 240);
+        margin-top: -10px;
+        font-weight: bold;
+      
+   }
+   .category:hover{
+        border-bottom:1px solid  rgb(8, 51, 51);
+   }
+   #Login{
+       color:rgb(8, 51, 51);
+       width:45%;
+       height:45px;
+       margin-left: 200px;
+       margin-top: -10px;
+       font-size: 17px;
+       border: 1px solid whitesmoke;
+      font-weight: bold;
+
+       
+   }
+   #Login:hover{
+       border-bottom:1px solid  rgb(8, 51, 51);
+   }
+   #container5{
+       /* width:98.5%; */
+       height:40px;
+       /* border:1px solid red; */
+       background-color: rgb(221, 235, 235);
+       text-align: center;
+       padding:10px;
+       width:1350px;
+
+   }
+    #container5>div~div{
+        text-decoration: underline;
+        font-weight: bold;
+    }
+    #container6{
+        width:100%;
+        height:220px;
+        margin-bottom: 60px;;
+        /* border:1px solid red; */
+    }
+    #footer{
+             margin-top: 50px;;
+              /* border:1px solid red; */
+              height:730px;
+              background-color: #0f4366;
+              width:1360px;;
+          }
+           #footer>div{
+               height:150px;
+               background-color:rgb(15, 59, 85) ;
+               color:white;
+           }
+           form{
+               padding:30px;
+           }
+           form>input+input{
+               border:1px solid white;
+               background-color: rgb(15, 59, 85) ;
+               color:white;
+               text-align: center;
+               font-size: 16px;
+               font-weight: bold;;
+               
+           }
+           form>input+input:hover{
+               background-color: white;
+               color:black
+           }
+           form>label{
+                margin-top: 10px;
+           }
+           input{
+               border-radius: 5px;;
+               height:40px;
+               width:200px;
+               margin-top: 5px;;
+           }
+           form~div{
+               
+               /* border:1px solid green; */
+               display:flex;
+               column-gap: 150px;
+
+           }
+           form~div>div>p{
+               /* width:150%; */
+                 
+               width:200px;
+               /* border:1px solid red; */
+               font-weight: bold;
+               font-size: 16px;;
+               margin-left: 20px;;
+               
+           }
+            form~div>div>div{
+                /* border:1px solid red; */
+                padding:2px;
+                margin:2px;
+                margin-left: 20px;;
+            }
+             form~div>div>div>span{
+                 font-weight: bold;;
+             }
+            form~div>:last-child>div{
+                color:white;
+                width:260px;
+                height:190px;
+                border:1px solid rgb(12, 74, 109) ; ;
+                margin-left: -50px;
+                margin-top: 20px;
+                background-color:rgb(13, 90, 134) ;
+                padding:10px;
+                border-radius: 5px;
+
+            
+            
+            }
+            form~div>:last-child>div>input{
+             background-color:rgb(13, 90, 134) ; 
+             border:1px solid white;
+             color:white;
+             text-align: center;
+            }
+             form~div>:last-child>div>input:hover{
+                 background-color: white;
+                 color:black
+             }
+             form~div>:last-child>:last-child
+             {
+                    background-color:#0f4366;
+                    height:100px;
+                    /* border:1px solid red; */
+
+             }
+             
+               form~div>:last-child>:last-child>div{
+                  width:80%;
+                  height:60%;
+               }
+              form~div>:last-child>:last-child>div>img{
+                  width:90%;
+                  height:98%;
+              }
+
+
+    #product{
+    margin:2% 5% 2% 5%;
+    /* padding:20px; */
+    border:1px solid whitesmoke;
+    height:2000px;
+    margin-bottom: 0px;
+    width:1300px;
+    display:grid;
+    grid-template-columns:20% 20% 20% 20%;
+    grid-gap:5%;
+    justify-content: center;
+    background-color: rgb(245, 243, 239);
+
+    }
+    img{
+    border:1px solid whitesmoke;
+    width:98%;
+    height:65%;
+    }
+    #item_div{
+        /* border:1px solid green; */
+        height:400px;
+        background-color:rgb(222, 233, 236) ;
+         box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    }
+    #out_div{
+        /* margin-bottom: 100px; */
+        border:1px solid black;
+    }
+    #add_btn{
+        /* border:1px solid red; */
+        height:40px;
+        width:150px;
+        background-color: rgb(44, 43, 43);
+        color:white;
+        border-radius: 5px;;
+
+    }
+     #add_btn:hover{
+         background-color: black;
+         color:white;
+         font-weight: bold;;
+         
+     }
+     #prd_price{
+         font-weight: bold;;
+          
+     }
+       #prd_name:hover{
+            color:rgb(92, 92, 148);
+       }
+
+     #prd_price:hover{
+         color:rgb(92, 92, 148);
+     }
+     #prd_name{
+         font-weight: bold;;
+     }
+
+     
+    </style>
+</head>
+<body>
+       
+      
+         <!-- container1 -->
+    <div id="container1">
+        <div id="zap_logo">
+           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQu2x-B-DBckAzrFzU2zgjNidM83Sy_pG96dTzodm7SKIlYJsKf_won9PBPwDXR4AdbZ8Y&usqp=CAU" alt="logo"/>
+        </div>
+        <div id="vrsnl_logo">
+            <!-- <img src="https://www.trademarkelite.com/ashx/createmark.ashx?tm=VRSNL" alt="logo"/> -->
+         <p>VrsnL</p>
+        </div>
+    </div>
+
+    <!-- container2 -->
+    <div id="container2">
+        <div id="Cust">
+            <select id="select">
+                <option value="">Customer Service</option>
+                <option value="">Contact info</option>
+                <option value=""> FAQ</option>
+                <option value="">Give Us Feedback </option>
+            </select>
+        </div>
+        <div id="number">
+             <p>Available 24/7 at (800) 927-7671</p>
+        </div>
+    </div>
+
+    <!-- container3 -->
+     <div id="container3">
+         <div id="logo2">
+             <img src="https://m.media-amazon.com/images/G/01/Zappos/MysteryDeals2021/2021-ZAPPOS-HOLIDAY-HEADER-LOGO.svg" alt="logo"/>
+         </div>
+
+         <div id="textarea">
+             <textarea id="text" rows="3" cols="70" >
+                 KAJAL,search for shoes, clothes, etc
+             </textarea>
+
+         </div>
+         <input id="search" type="text" value="search"/>
+          <div id="cart">
+             
+              <div id="imgDiv">
+                  <img src="https://image.flaticon.com/icons/png/512/126/126083.png"/>
+                  
+                </div>
+                 <div>
+                     <a href="cart.html">My Cart</a>
+                </div>
+        </div>
+              
+     </div>
+
+     <!-- container4 -->
+     <div id="container4">
+         
+        
+         <select  class="category">
+             <option>New</option>
+         </select>
+         <select id="women" class="category">
+             <option value="women">Women</option>
+             <option value="">Shoes</option>
+             <option value="">Clothing</option>
+             <option value="">Accessories & more</option>
+             <option value="">Gift card</option>
+             <option value="">Featured</option>
+
+         </select>
+        <select class="category">
+            <option>Men</option>
+        
+        </select>
+        
+         <select class="category">
+             <option>Kids</option>
+         </select>
+         
+        
+         <select class="category">
+             <option>Departments</option>
+         </select>
+         
+        
+         <select class="category">
+             <option>Brands</option>
+         </select>
+         
+         
+         <select class="category">
+             <option>sales</option>
+         </select>
+         
+         
+         <select class="category">
+              <option>clothings</option>
+         </select>
+        
+
+        <a href="sign-up.html"><input  id="Login" type="submit" value="sign In / Register"></a>
+        
+     </div>
+   
+    <!-- container5 -->
+    <div id="container5">
+      <div>We love new categories! Check out Bedding Sets, Blankets, Throws and more!</div>
+      <div>Browse Wedding</div>
+    </div>
+
+     
+      
+      <div id="product"></div>
+
+
+          <!-- footer -->
+    <div id="footer">
+        <div>
+          <form>
+              <label>Make your inbox happy by joining our exclusive newsletter</label>
+              <br>
+              <label>Email</label>
+              <br>
+              <input type="text" placeholder="Email address"/>
+              <input type="text" value="SIGN UP TODAY"/>
+          </form>
+
+
+            <div>
+                <div>
+                    <p>Explore Zappos</p>
+                    <div>Brands</div>
+                    <div>Clothing</div>
+                    <div>The Style Room</div>
+                    <div>Eyewear</div>
+                    <div>New Arrivals</div>
+                    <div>Outdoor</div>
+                    <div>Rideshop</div>
+                    <div>Running</div>
+                    <div>Jackets</div>
+                    <div>Leather Jackets</div>
+                    <div>Rain Jackets</div>
+                    <div>Shoes</div>
+                    <div>Watches</div>
+                    <div>Wedding</div>
+                    <div>Denim Jackets</div>
+                    <div>Zappos Adaptive</div>
+                    <div>Education & Military Program</div>
+                    <div>All Departments</div>
+                    
+                </div>
+                  
+
+                <div>
+                    <p><span>Customer Service</span></p>
+                    <div>FAQS</div>
+                    <div>Contact Info</div>
+                    <div>Ayuda en espanol</div>
+                    <div>Shipping And Returns</div>
+                    <div>About Proposition 65</div>
+                    <br>
+                    <br>
+                    <div><span>Fit Info</span></div>
+                    <br>
+                    <div>Measurement Guide</div>
+                    <div>Size Conversation</div>
+                    <div>Measure Your Bra Size</div>
+                   
+
+                </div>
+
+                <div>
+                    <p>About Zappos</p>
+                    <div>About</div>
+                    <div>Beyond The Box Blog</div>
+                    <div>Zappos for Goods</div>
+                    <div>Tours</div>
+                    <div>Get the Zappos Mobile app</div>
+                    <div>Amazon Prime Benefits</div>
+                    <div>Zappos VIP Benefits</div>
+                    <div>Powered by Zappos</div>
+                    <div>Coupons</div>
+                    <div>Accessibilty statemnet</div>
+                    <div>Accessibilty Survey</div>
+                    <div>Resources</div>
+                    <div>Associates Program</div>
+                    <div>Jobs</div>
+                    <div>Press Kit</div>
+                    <div>Glossary of Terms</div>
+                    <div>Site Map</div>
+                   
+                </div>
+
+                <div>
+                   
+                    <div>
+                        <p>Your Voice Matter</p>
+                        <p>We'd love to learn more about your shopping experiences on Zappos.com and how we can improve!</p>
+                        <input type="text" value="TAKE SURVEY"/>
+                        
+
+                    </div>
+                    <div> 
+                        <p>Connect With Us</p>
+                        <div>
+                            <img src="https://t4.ftcdn.net/jpg/02/85/44/69/360_F_285446949_eVkqwuNjPXLwR72oq0ctYltBCIflCbwh.jpg"/>
+                        </div>
+                    </div>
+                   
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+    
+
+</body>
+</html>
+<script>
+    let data = [
+     {
+       name: "Athena",
+       price: "$2000",
+       img:"https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/13719160/2021/3/5/b04a5dc0-9beb-4490-ae2c-f0f9654ded1c1614925067822-Athena-Fuchsia-Pink-dress-with-Power-shoulderS--Tulip-Bottom-1.jpg",
+     },
+     {
+       name: "Deewa",
+       price: "$1347",
+       img: "https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/13435636/2021/1/22/f6914028-82fa-4187-90a4-1867d8eac3a11611296894583IndoEraGreenEmbroideredkurtaPalazzowithDupattaSetsDressesDee1.jpg"
+     },
+     {
+       name: "SASSAFRAS",
+       price: "$9999",
+       img: "https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/10856160/2019/11/5/f0172470-408a-4b8b-a1e5-045bd98a5f8b1572938035104-SASSAFRAS-Women-Dresses-9581572938032856-1.jpg"
+     },
+     {
+       name: "Harpa",
+       price: "$2000",
+       img: "https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/productimage/2020/9/16/25f5b6a7-ce25-4e66-8a61-3aa2037b6c741600207614629-1.jpg"
+     },
+     {
+       name: "SASSAFRAS",
+       price: "$1347",
+       img: "https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/10607436/2019/11/7/77e1b62b-c34c-4cff-a68e-f3de1c1a886a1573108038526-SASSAFRAS-Women-Black-Solid-Trench-Dress-6681573108036504-1.jpg"
+     },
+     {
+       name: "The Vanca",
+       price: "$9999",
+       img: "https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/productimage/2018/12/29/d0aa2749-232a-4d57-891e-183c70f6b7931546046706942-1.jpg"
+     },
+     {
+       name: "Nautica",
+       price: "$2000",
+       img: "https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/14013796/2021/9/22/ca6caa8c-af96-40b9-9b9a-4d7ecb412bee1632310169379-Nautica-Women-Dresses-9991632310168809-1.jpg"
+     },
+     {
+       name: "Harpa",
+       price: "$1347",
+       img: "https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/productimage/2020/10/6/e730759b-0f29-4928-bb36-eed02689b7ef1601935513476-1.jpg"
+     },
+     {
+       name: "Atheaa",
+       price: "$9999",
+        img: "https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/13719124/2021/3/4/83636603-be5e-46a7-8071-58b828b858ef1614838465712-Athena-Purple-dress-with-Power-shoulderS--Tulip-Bottom-89016-1.jpg"
+     },
+     {
+       name: "SASSAFARAS",
+       price: "$9999",
+        img: "https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/8643281/2019/2/1/563a4cec-e24f-42bd-ae3f-8ad877b40c051549024712622-SASSAFRAS-Women-Off-White-Printed-Maxi-Dress-750154902471183-1.jpg"
+     },
+      {
+       name: "Atheaa",
+       price: "$9999",
+        img: "https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/15577322/2021/10/19/bb08410a-bbb6-42d7-af5d-e98bcf4f3aa01634627111347-Antheaa-Women-Dresses-1231634627110271-1.jpg"
+     },
+      {
+       name: "Tokyo talkies",
+       price: "$9999",
+        img: "https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/2299060/2018/7/30/7584b116-2a2c-4fb1-881c-af58cc484b181532944603854-Tokyo-Talkies-Women-Black-Printed-Maxi-Dress-4791532944603727-1.jpg"
+     },
+      {
+       name: "Irish",
+       price: "$9999",
+        img: "https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/productimage/2021/3/18/1ab6d9e3-e5c3-46e6-adc0-6066105b01a81616060924389-1.jpg"
+     },
+      {
+       name: "SASSAFRAS",
+       price: "$9999",
+        img: "https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/11364126/2020/1/28/45359a1c-5240-4837-8878-05f7f3feee4d1580197901836-SASSAFRAS-Women-Green-Solid-A-Line-Dress-9491580197899621-1.jpg"
+     },
+      {
+       name: "Nautica",
+       price: "$9999",
+        img: "https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/14013790/2021/9/22/f365f235-0570-4b04-aa9f-c94e981a66471632310698011-Nautica-Women-Dresses-2421632310697587-4.jpg"
+     },
+      {
+       name: "SASSAFRAS",
+       price: "$9999",
+        img: "https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/11364402/2020/1/27/e48cf4ef-a562-46fd-937f-edcfb82ff12a1580104205123-SASSAFRAS-Women-Blue-Printed-A-Line-Dress-5431580104203018-1.jpg"
+     },
+   ];
+
+   var prod=document.getElementById("product");
+//    let prod=document.getElementById("products");
+
+function showProducts(event){
+  prod.innerhtml==null;
+
+event.forEach(function(product){
+
+    console.log(product.name);
+
+let outer_div=document.createElement("div");
+outer_div.setAttribute("id","out_div")
+// outer_div.style.border="1px solid green";
+
+let inner_div = document.createElement("div");
+inner_div.style.padding="10px";
+inner_div.setAttribute("id","item_div");
+
+
+
+let img = document.createElement("img");
+
+img.src=product.img;
+
+let product_price = document.createElement("p");
+product_price.setAttribute("id","prd_price")
+
+product_price.textContent=product.price;
+
+
+
+let product_name = document.createElement("p");
+product_name.setAttribute("id","prd_name")
+product_name.textContent= product.name;
+
+inner_div.append(img,product_name,product_price);
+
+let addtocart_btn=document.createElement("button");
+addtocart_btn.setAttribute("id","add_btn")
+addtocart_btn.innerText="Add to Cart";
+
+addtocart_btn.onclick=function(){
+    addtocart(product);
+};
+
+inner_div.append(img,product_name,product_price,addtocart_btn);//html element
+
+
+prod.append(inner_div)
+// body.append(outer_div)
+});
+}
+showProducts(data);
+//console.log(localStorage.getItem("cart"));
+
+if(localStorage.getItem("cart")==null){
+    localStorage.setItem("cart",JSON.stringify([]))
+}
+
+function addtocart(p)
+{
+    let product_cart=JSON.parse(localStorage.getItem("cart"));
+    product_cart.push(p);
+    
+    localStorage.setItem("cart",JSON.stringify(product_cart))
+
+    console.log("product_cart",product_cart);
+    // console.log("p",p);
+   // alert("it works");
+
+}
+      
+
+</script>

@@ -1,0 +1,1176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant&display=swap" rel="stylesheet">
+    <style>
+        body{
+            font-family: sans-serif;
+        }
+      #container1{
+          width:100%;
+          height:50px;
+          border-top:1px solid rgb(218, 214, 214);
+          display:flex;
+          width:1350px;
+
+      }
+      #container1>div{
+          border-right:1px solid rgb(218, 214, 214);
+          width:10%;
+           
+      }
+      #container1>div>img{
+          width:100%;
+          height:100%;
+      }
+      #zap_logo:hover{
+          background-color: rgb(27, 27, 161);
+      }
+      #vrsnl_logo>p{
+          
+          color:gray;
+          font-weight: bold;
+          text-align: center;
+           font-size: 20px;
+           margin-top: 10px;
+           
+           
+      }
+       #vrsnl_logo>p:hover{
+           color: black;
+          
+       }
+       #container2{
+          width:100%;
+          height:50px;
+          
+          display:flex;
+           width:1350px;
+
+      }
+      #Cust{
+         
+          width:15%;
+          
+      }
+      #select{
+          
+          height:100%;
+          width:100%;
+          background-color: rgb(34, 81, 184);
+          color:white;
+          font-weight: bold;
+          padding:10px;
+          border-right:3px solid black;
+      }
+      option{
+          background-color: white;
+          color:rgb(20, 20, 36);
+      }
+      #Cust~div{
+          width:100%;
+          color: white;
+          background-color: rgb(34, 81, 184);
+          padding-left: 20px;
+      }
+      #container3{
+          width:100%;
+          height:100px;
+          /* border:1px solid rgba(146, 142, 142, 0.897); */
+          /* padding:30px; */
+           
+          display:flex;
+          column-gap: 0px;
+          width:1350px;
+      }
+      #container3>#logo2{
+          /* border:1px solid red; */
+            width:10%;
+
+      }
+      #textarea{
+          /* border:1px solid rgb(50, 153, 46); */
+          padding:20px;
+          padding-right: 0px;
+          
+          
+      }
+      #text{
+         justify-content: center;
+        margin-top:0px;
+        color: rgb(10, 10, 10);
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; 
+        
+      }
+
+      #logo2>img{
+          width:100%;
+          height:80%;
+          padding:3px;
+      }
+      #search{
+          width:5%;
+          height:9%;
+          padding:20px;
+          margin-top: 20px;
+          color:white;
+          background-color: rgb(5, 32, 107);
+      }
+      #search:hover{
+          background-color: #2c78aa;
+      }
+      #cart{
+          width:10%;
+          margin: auto;
+          margin-right: 30px;
+          height:50%;
+         display:flex;
+          border: 1px solid green;
+          border-radius: 5px;
+      }
+      #imgDiv>img{
+          padding:5px;
+          width:80%;
+          height:70%;
+      }
+      #imgDiv~div{
+         text-align: center;
+         padding:13px;
+      }
+       #imgDiv~div>a{
+           text-decoration: none;
+           color:rgb(11, 51, 11)
+       }
+     #cart:hover{
+         background-color: rgb(168, 241, 168);
+     }
+     #container4{
+         display:flex;
+         column-gap: 20px;
+         padding:10px;
+         height:25px;
+         /* border: 1px solid red; */
+         background-color: rgb(243, 240, 240);
+         width:1350px;
+     }
+     #container4>label{
+         color:rgb(8, 39, 39);
+         font-weight: bold;;
+         margin-top: 2px;;
+         margin-left: 8px;
+         /* border:1px solid red; */
+         height:30px;
+          width:5%;
+
+     }
+      #container4>label>a{
+          text-decoration: none;
+          color:rgb(8, 51, 51);;
+      }
+      #container4>label:hover{
+        font-weight: bold;
+        border-bottom:1px solid  rgb(8, 51, 51);
+   }
+
+   .category{
+       width:7%;
+       height:45px;
+       color:rgb(8, 51, 51);
+       background-color:rgb(243, 240, 240) ;
+       border:1px solid rgb(243, 240, 240);
+        margin-top: -10px;
+        font-weight: bold;
+      
+   }
+   .category:hover{
+        border-bottom:1px solid  rgb(8, 51, 51);
+   }
+     #Login{
+       color:rgb(8, 51, 51);
+       width:45%;
+       height:45px;
+       margin-left: 200px;
+       margin-top: -10px;
+       font-size: 17px;
+       border: 1px solid whitesmoke;
+      font-weight: bold;
+
+       
+   }
+   #Login:hover{
+       border-bottom:1px solid  rgb(8, 51, 51);
+   }
+   #container5{
+       /* width:98.5%; */
+       height:40px;
+       /* border:1px solid red; */
+       background-color: rgb(221, 235, 235);
+       text-align: center;
+       padding:10px;
+       width:1350px;
+
+   }
+    #container5>div~div{
+        text-decoration: underline;
+        font-weight: bold;
+    }
+    #container6{
+        width:100%;
+        height:220px;
+        margin-bottom: 60px;;
+        /* border:1px solid red; */
+    }
+    #container6>img{
+        /* width:100%; */
+        height:100%;
+        width:1370px;
+        
+    }
+
+    /* #container7{
+      border:1px solid red;
+      
+      height:400px;
+    } */
+    #container7>h2{
+        padding:30px;
+    }
+    #container7{
+        
+      
+      /* border:1px solid red; */
+      width:100%;
+      text-align: center;
+      gap:10px;
+      display:grid;
+      grid-template-areas: 
+      "a b c d e f";
+
+    }
+     #container7>div>img{
+         width:80%;
+         height:170px;
+         padding:20px;
+         box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; 
+         
+     }
+      #container7>div>p:hover{
+          color:rgb(24, 127, 168);
+          text-decoration: underline;
+      }
+
+    #a{
+       grid-area: a;
+       width:216px;
+       /* height:300px; */
+       background-color: rgb(228, 234, 236);
+       /* border:1px solid rgb(155, 153, 153); */
+       background-color: rgb(228, 234, 236);
+    }
+    #b{
+       grid-area: b;
+        width:216px;
+       /* height:300px; */
+       /* border:1px solid rgb(155, 153, 153); */
+       background-color: rgb(228, 234, 236);
+    }
+    #c{
+        grid-area: c;
+         width:216px;
+        /* height:300px; */
+        /* border:1px solid rgb(155, 153, 153); */
+        background-color: rgb(228, 234, 236);
+    }
+    #d{
+        grid-area: d;
+         width:216px;
+        /* height:300px; */
+        /* border:1px solid rgb(155, 153, 153); */
+        background-color: rgb(228, 234, 236);
+    }
+    #e{
+        grid-area: e;
+         width:216px;
+        
+        /* border:1px solid rgb(155, 153, 153); */
+        background-color: rgb(228, 234, 236);
+    }
+    #f{
+       grid-area: f;
+        width:216px;
+       /* height:300px; */
+       /* border:1px solid rgb(155, 153, 153); */
+       background-color: rgb(228, 234, 236);
+    }
+    #container8{
+        margin-top: 100px;;
+        /* border:1px solid red; */
+        display:grid;
+        grid-template-columns: 450px 450px 450px;
+        grid-template-rows: 450px;
+        column-gap: 13px;
+        text-align: center;
+         /* border:1px solid red; */
+        margin-bottom: 200px;;
+    }
+    
+     #container8>div>img{
+         width:100%;
+         height:100%;
+         box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; 
+         
+     }
+     /* #container8>div>p:nth-child(1){
+        font-weight: bold;
+        
+     } */
+      #container8>div>p{
+        /* border:1px solid red; */
+      }
+       #container8>div>div{
+           /* border:1px solid red; */
+           
+       }
+
+     #container8>div>div>:nth-child(1){
+         font-weight: bold;
+     }
+     #container8>div>div>:nth-child(3){
+         text-decoration: underline;
+         color:rgb(21, 21, 148);
+         font-weight:bold;
+     }
+      #container8>div>div>:nth-child(3):hover{
+          color:rgb(26, 82, 146);
+          
+      }
+      #container9{
+         /* border:1px solid red; */
+         margin-top: 100px;;
+         display:grid;
+         grid-template-columns: 680px 680px;
+         grid-template-rows: 680px;
+         column-gap: 8px;
+         
+         
+
+      }
+       #container9>:nth-child(1){
+         /* border:1px solid red;  */
+         background-color: rgb(101, 207, 226);
+         text-align: center;
+         justify-content: center;
+         padding-bottom: 40px;
+        
+        
+         
+       }
+       #container9>div>div{
+           border: 1px solid black;
+           width:30%;
+           height:40px;
+           margin:auto;
+           font-size: 20px;
+           padding:5px;
+           
+       }
+       #container9>div>div:hover
+      {
+           color: white;
+           background-color: black;
+      }
+        #container9>:nth-child(1)>img{
+            margin-top: 200px;
+        }
+        /* #container9>div */
+        #container9>div~div>img{
+            width:96%;
+            height:100%;
+        }
+
+      #container10{
+         /* width:100%; */
+         height:560px;
+         /* border:1px solid red; */
+         margin-top: 60px;
+         display: grid;
+         grid-template-columns: 500px 870px;
+         grid-template-rows:530px;
+      }
+      #container10>div{
+          /* border:1px solid red; */
+      }
+       #container10>div>img{
+        width:90%;
+        height:90%;
+        /* padding:20px; */
+        border:40px solid rgb(12, 107, 107)
+         
+     }
+     #container10>div>div{
+         border:1px solid black;
+         width:40%;
+         height:35px;
+         margin:auto;
+         text-align: center;
+         padding:6px;
+         border-radius: 10px;;
+     }
+          #container10>div>h2{
+              margin-top: 200px;
+            
+              margin-left: 20px;;
+          }
+         #container10>div>p{    
+            margin-left: 20px;;
+             padding:2px;
+
+         }
+         #container10+h2{
+          padding:20px;
+          /* font-weight: lighter; */
+         
+         }
+         #container11{
+        height:360px;
+         /* border:1px solid red; */
+        
+         display: grid;
+         grid-template-columns: 220px 220px 220px 220px 220px 220px;
+         grid-template-rows:360px;
+         column-gap: 10px;
+         }
+         
+         #container11>div{
+         /* border:1px solid red; */
+         margin-left: 20px;
+         background-color:rgb(229, 234, 236);
+        
+         }
+          #container11>div>img{
+              width:80%;
+              height:50%;
+              padding:20px;
+              box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; 
+          }
+          #container11>div>img~p:hover{
+         text-decoration: underline;
+         color: rgb(42, 144, 212);
+         }
+          #container11>div>p~p~p{
+            color:red;
+          }
+
+
+
+          #container12
+          {
+            /* width:100%; */
+         height:560px;
+         /* border:1px solid red;  */
+         margin-top: 60px;
+         display: grid;
+         grid-template-columns: 870px 500px;
+         grid-template-rows:560px;
+          }
+          #container12>div{
+             /* border:1px solid red;  */
+             height:100%;
+
+          }
+         #container12>div>img{
+             padding:12px;
+             width:97%;
+             height:95%;
+
+         }
+        #container12>div~div{
+            padding:10px;
+            background-color: rgb(197, 192, 192);
+            height:95%;
+
+
+        }
+      #container12>div~div>p{
+             font-size: 30px;
+            width:60%;
+             font-weight: bold;
+             color:red;
+             height:40px;
+             /* border: 1px solid green;; */
+             margin:auto;
+             margin-top:160px;
+             text-align: center;
+             font-family: 'Cormorant', serif;
+      }
+      #container12>div~div>p+p{
+             color:rgb(20, 20, 20);
+             font-size: 18px;;
+             width:80%;
+             margin-top:0px;;
+             line-height: 20px;;
+            font-family: 'Cormorant', serif;
+      }
+      #container12>div~div>p+p~p{
+          text-decoration: underline;
+      }
+       #container12>div~div>p+p~p:hover{
+           color:blue
+       }
+       #container13{
+           /* border:1px solid red; */
+           margin-top: 30px;
+           
+           display:grid;
+           column-gap: 10px;;
+           grid-template-columns: 445px 445px 445px;
+           grid-template-rows: 480px;
+       }
+       #container13>div{
+       
+        /* border:1px solid red; */
+        height:98%;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; 
+
+       }
+        #container13>div>img{
+            padding:10px;
+            width:98%;
+            height:98%;
+        }
+        #container13>div>p{
+            /* border:1px solid green; */
+            text-align: center;
+            margin:0px;
+            gap:20px;
+             margin-top: 5px;
+        }
+         #container13>div>p:nth-child(2){
+
+           font-size: 18px;
+           font-weight: bold;
+         
+        }
+       
+         #container13>div>p:nth-child(4){
+           
+           color:rgb(12, 48, 145);
+            font-size: 14px;
+            text-decoration: underline;
+        }
+         #container13>div>p:nth-child(4):hover{
+           
+           color:rgb(10, 112, 153);
+          
+        }
+        #container14{
+            margin-top: 150px;
+            /* border:1px solid red; */
+            height:500px;
+            display:flex;
+            flex-direction: column;
+            width:1350px;;
+            
+
+        }
+         #container14>:nth-child(1){
+           font-weight: bold;
+           font-size: 16px;;
+         }
+          #container14>p{
+              font-size:18px ;
+              font-weight: lighter;
+              color:rgb(37, 37, 37);
+             /* border:1px solid green; */
+             margin-top: -2px;;
+              margin-left:30px;
+              margin-right: 10px;;
+              
+          }
+           @media (min-width:0px) and (max-width:500px){
+               #container14{
+                   margin-bottom: 1000px;  
+               }
+               #container14>p{
+                font-size: 38px; 
+                
+               }
+
+               
+          }
+           @media (min-width:500px) and (max-width:800px){
+               #container14{
+                   margin-bottom: 100px;
+                   
+               }
+          }
+           @media (min-width:800px)  {
+               #container14{
+                   margin-bottom: 100px;
+                   /* width:100%; */
+               }
+          }
+          #container14>p>span{
+           color:rgb(25, 85, 119);
+           font-size: 14px;
+           text-decoration: underline;
+          }
+          #container14>p>span:hover{
+            color:rgb(77, 175, 231);  
+          }
+          #footer{
+             margin-top: -100px;;
+              /* border:1px solid red; */
+              height:730px;
+              background-color: #0f4366;
+              width:1360px;;
+          }
+           #footer>div{
+               height:150px;
+               background-color:rgb(15, 59, 85) ;
+               color:white;
+           }
+           form{
+               padding:30px;
+           }
+           form>input+input{
+               border:1px solid white;
+               background-color: rgb(15, 59, 85) ;
+               color:white;
+               text-align: center;
+               font-size: 16px;
+               font-weight: bold;;
+               
+           }
+           form>input+input:hover{
+               background-color: white;
+               color:black
+           }
+           form>label{
+                margin-top: 10px;
+           }
+           input{
+               border-radius: 5px;;
+               height:40px;
+               width:200px;
+               margin-top: 5px;;
+           }
+           form~div{
+               
+               /* border:1px solid green; */
+               display:flex;
+               column-gap: 150px;
+
+           }
+           form~div>div>p{
+               /* width:150%; */
+                 
+               width:200px;
+               /* border:1px solid red; */
+               font-weight: bold;
+               font-size: 16px;;
+               margin-left: 20px;;
+               
+           }
+            form~div>div>div{
+                /* border:1px solid red; */
+                padding:2px;
+                margin:2px;
+                margin-left: 20px;;
+            }
+             form~div>div>div>span{
+                 font-weight: bold;;
+             }
+            form~div>:last-child>div{
+                color:white;
+                width:260px;
+                height:190px;
+                border:1px solid rgb(12, 74, 109) ; ;
+                margin-left: -50px;
+                margin-top: 20px;
+                background-color:rgb(13, 90, 134) ;
+                padding:10px;
+                border-radius: 5px;
+
+            
+            
+            }
+            form~div>:last-child>div>input{
+             background-color:rgb(13, 90, 134) ; 
+             border:1px solid white;
+             color:white;
+             text-align: center;
+            }
+             form~div>:last-child>div>input:hover{
+                 background-color: white;
+                 color:black
+             }
+             form~div>:last-child>:last-child
+             {
+                    background-color:#0f4366;
+                    height:100px;
+                    /* border:1px solid red; */
+
+             }
+             
+               form~div>:last-child>:last-child>div{
+                  width:80%;
+                  height:60%;
+               }
+              form~div>:last-child>:last-child>div>img{
+                  width:90%;
+                  height:98%;
+              }
+
+
+
+
+    </style>
+</head>
+<body>
+    <!-- container1 -->
+    <div id="container1">
+        <div id="zap_logo">
+           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQu2x-B-DBckAzrFzU2zgjNidM83Sy_pG96dTzodm7SKIlYJsKf_won9PBPwDXR4AdbZ8Y&usqp=CAU" alt="logo"/>
+        </div>
+        <div id="vrsnl_logo">
+            <!-- <img src="https://www.trademarkelite.com/ashx/createmark.ashx?tm=VRSNL" alt="logo"/> -->
+         <p>VrsnL</p>
+        </div>
+    </div>
+
+    <!-- container2 -->
+    <div id="container2">
+        <div id="Cust">
+            <select id="select">
+                <option value="">Customer Service</option>
+                <option value="">Contact info</option>
+                <option value=""> FAQ</option>
+                <option value="">Give Us Feedback </option>
+            </select>
+        </div>
+        <div id="number">
+             <p>Available 24/7 at (800) 927-7671</p>
+        </div>
+    </div>
+
+    <!-- container3 -->
+     <div id="container3">
+         <div id="logo2">
+             <img src="https://m.media-amazon.com/images/G/01/Zappos/MysteryDeals2021/2021-ZAPPOS-HOLIDAY-HEADER-LOGO.svg" alt="logo"/>
+         </div>
+
+         <div id="textarea">
+             <textarea id="text" rows="3" cols="70" >
+                 KAJAL,search for shoes, clothes, etc
+             </textarea>
+
+         </div>
+         <input id="search" type="text" value="search"/>
+          <div id="cart">
+             
+              <div id="imgDiv">
+                  <img src="https://image.flaticon.com/icons/png/512/126/126083.png"/>
+                  <a href="cart.html"></a>
+                  
+                </div>
+                 <div>
+                     <a href="cart.html">My Cart</a>
+                </div>
+        </div>
+              
+     </div>
+
+     <!-- container4 -->
+     <div id="container4">
+         
+        <label><a href="product_page.html">Women</a></label>
+         <select  class="category">
+             <option>New</option>
+         </select>
+         <!-- <select id="women" class="category"> -->
+             <!-- <a href="cart.html"> <option value="women">Women</option></a> -->
+             <!-- <option value="women" >Women</option> -->
+            
+             <!-- <option value="">Shoes</option> -->
+             <!-- <option value="" class="dress" onchange="dress()">Dresses</option> -->
+             <!-- <option onclick = "document.location = 'sign-up.html' " >Women</option>
+             <option value="">Accessories & more</option>
+             <option value="">Gift card</option>
+             <option value="">Featured</option>
+
+         </select> -->
+        <select class="category">
+            <option>Men</option>
+        
+        </select>
+        
+         <select class="category">
+             <option>Kids</option>
+         </select>
+         
+        
+         <select class="category">
+             <option>Departments</option>
+         </select>
+         
+        
+         <select class="category">
+             <option>Brands</option>
+         </select>
+         
+         
+         <select class="category">
+             <option>sales</option>
+         </select>
+         
+         
+         <select class="category">
+              <option>clothings</option>
+         </select>
+        
+         <a href="sign-in.html"> <input  id="Login" type="submit" value="sign In / Register"></a>
+       
+        
+     </div>
+   
+    <!-- container5 -->
+    <div id="container5">
+      <div>We love new categories! Check out Bedding Sets, Blankets, Throws and more!</div>
+      <div>Browse Wedding</div>
+    </div>
+     
+     <!-- container6 -->
+     <div id="container6">
+       <img src="https://m.media-amazon.com/images/G/01/2021/homepage11.01/HOMEPAGE-HERO-GIFT-GUIDE-BANNER-2880x500.png"/>
+     </div>
+     
+
+     <!-- container7 -->
+     <h2>Shop Popular Categories</h2>
+     <div id="container7">
+         
+         <div id="a">
+             <img src="https://m.media-amazon.com/images/I/71EsjMvD6pL._AC_SX255_.jpg" alt="pic"/>
+             <p>Sneakers & Athletics Shoes</p>
+            </div>
+         
+         <div id="b">
+             <img src="https://m.media-amazon.com/images/I/716OTlbmxoL._AC_SX255_.jpg" alt="pic"/>
+             <p>snow Boots</p> 
+            </div>
+        
+         <div id="c">
+             <img src="https://m.media-amazon.com/images/I/71Tqv3P9JSL._AC_SX255_.jpg" alt="pic"/>
+             <p>Lifestyle Sneakers</p>
+            </div>
+       
+         <div id="d">
+             <img src="https://m.media-amazon.com/images/I/81L24LvvCBL._AC_SX255_.jpg" alt="pic"/>
+             <p>Ankle Boots</p>
+            </div>
+        
+         <div id="e">
+             <img src="https://m.media-amazon.com/images/I/71JEagqTaVL._AC_SX255_.jpg" alt="pic"/>
+             <p>Coats & outerwears</p>
+            </div>
+        
+         <div id="f">
+             <img src="https://m.media-amazon.com/images/I/711cMEaj-OL._AC_SX255_.jpg" alt="pic"/>
+             <p>Laceup Boots</p>
+            </div>
+
+     </div>
+  
+     <!-- container8 -->
+
+     <div id="container8">
+         <div>
+             <img src="https://m.media-amazon.com/images/G/01/2021/homepage11.01/BROADCAST-FAMILY-PJS-NOVEMBER-TRIPTYCH-500X500_copy.jpg"/>
+            <div>
+             <p>Pictures-Ready Pajamas for the Family</p>
+             <p>Create festive family photo vibes with coordinating pjs!</p>
+             <p>SHOP MATCHING FAMILY PJS </p>
+            </div>
+
+         </div>
+         <div>
+             <img src="https://m.media-amazon.com/images/G/01/2021/homepage11.01/MYSTERY-DEALS-TRIPTYCH-500x500.png"/>
+             <div>
+                 <P>Don't Wait to see Your Deals!</P>
+             <P> W've kept our best deals wraps- don't miss out!</P>
+             <P>SHOP THE DEALS</P>
+             </div>
+
+         </div>
+         <div>
+             <img src="https://m.media-amazon.com/images/G/01/2021/homepage11.01/BROADCAST-UGG-BRAND-SPOTLIGHT-SLIPPERS-BOOTS-NOVEMBER-TRIPTYCH-500X500.jpg"/>
+             <div>
+                 <P>Brands Spotlight:UGG Slippers, Boots, & More</P>
+                <p>Send the gift of warmth to everyone on your nice list!</p>
+               <p>SHOP ALL UGG</p>
+             </div>
+           
+         </div>
+         
+     </div>
+
+     <!-- container9 -->
+     <div id="container9">
+         <div>
+            <!-- <h1>ARRIVAL</h1> -->
+            <img src="https://m.media-amazon.com/images/G/01/2021/homepage11.01/COOP-NEW-ARRIVAL-LOGO-1X_3.svg"/>
+            <p>HOKA ONE ONE® & GORE-TEX® Stay dry on the trails without sacrificing breathability!</p>
+           <div>Shop Hoka Gore Tex</div>
+         </div>
+         <div>
+             <img src="https://bit.ly/3GY0YXm" alt="shoes"/>
+         </div>
+
+     </div>
+
+<!-- container10 -->
+        <div id="container10">
+           <div>
+              <h2>Style Spotlight:Vans SK8-HI MTE-2</h2>
+              <p>Enjoy Made For the Elements performance and classic Vans style.</p>
+              <div>SHOP ALL NEW VANS</div>
+           </div>
+        
+         <div>
+             <img src="https://cdn.shopify.com/s/files/1/2420/8361/files/Mesh_Examples_large.jpg?v=1560030364"/>
+        </div>  
+    </div>
+ 
+    <h2>Popular Item</h2>
+    <!-- container11 -->
+    <div id="container11">
+      <div>
+          <img src="https://m.media-amazon.com/images/I/71gmDCM5e1L._AC_SX255_.jpg"/>
+          <p>BOBS from SKECHERS</p>
+          <p>Keepsakes-Ice Angel</p>
+          <p>$37.34</p>
+      </div>
+      <div>
+          <img src="https://m.media-amazon.com/images/I/81UFJgOLt4L._AC_SX255_.jpg"/>
+          <p>Under Armour</p>
+          <p>Coldgear Leggings</p>
+          <p>$49.9</p>
+      </div>
+      <div>
+          <img src="https://m.media-amazon.com/images/I/81HngJoUU1L._AC_SX255_.jpg"/>
+          <p>adidas Running</p>
+          <p>Wrangler</p>
+          <p>Fleece Lined 5 Pocked pant</p>
+          
+
+      </div>
+      <div>
+          <img src="https://m.media-amazon.com/images/I/81eaXnZN6PL._AC_SX255_.jpg"/>
+          <p>Wrangler</p>
+          <p>Wrangler Authentics Fleece-</p>
+          <p>$27.97</p>
+
+      </div>
+      <div>
+          <img src="https://m.media-amazon.com/images/I/71lkSRzdjgL._AC_SX255_.jpg"/>
+          <p>Reef</p>
+          <p>Star Cushion Sassy</p>
+          <p>$31.45</p>
+          
+
+      </div>
+      <div>
+          <img src="https://m.media-amazon.com/images/I/81syglJ6bwL._AC_SX255_.jpg"/>
+          <p>Carhartt</p>
+          <p>Base Force Midweight</p>
+         <p>$29.99</p>
+        
+         
+      </div> 
+    </div>
+
+
+    <!-- container12 -->
+    <div id="container12">
+        <div>
+            <img src="https://d24y65w6idg7xf.cloudfront.net/uploads/style-room/W_TRENDS_DETAIL_2021_11_UTILITYDETAILSSOREL1_XL1X.jpg"/>
+        </div>
+        <div>
+            <p>Dress Yourself</p>
+            <p>Two of our favorite Instagrammers show us how to wear the dresses of the season</p>
+            <p>Shop Dress Yourself</p>
+        </div>
+
+    </div>
+
+    <!-- container13 -->
+    <div id="container13">
+        <div>
+            <img src="https://m.media-amazon.com/images/G/01/2021/giftguide/GIFT-GUIDE-MORE-ZAPPOS-TRIPTYCHS-VIP.jpg"/>
+             <p>Join Zappos VIP for FREE today!</p>
+            <p>Get Free Expedited Shipping, earn points
+            redeemable for VIP Codes,
+            and more
+            </p>
+            <p>BECOME A ZAPPOS VIP</p>
+        </div>
+        <div>
+            <img src="https://m.media-amazon.com/images/G/01/2021/giftguide/GIFT-GUIDE-MORE-ZAPPOS-TRIPTYCHS-GOODS-FOR-GOOD.jpg"/>
+            <p>Goods-for-Goods Gifting</p>
+            <p>Find top-rated gift ideas that give back to the community and environment!</p>
+            <p>SHOP SUSTAINABLE,GIVE BACK & MORE</p>
+        </div>
+        <div>
+            <img src="https://m.media-amazon.com/images/G/01/2021/giftguide/GIFT-GUIDE-MORE-ZAPPOS-TRIPTYCHS-FREE-RETURNS.jpg"/>
+             <p>Risk-Free Gifting with 365-Day Returns</p>
+            <p>Shop for yourself or a loved one without worry thanks to our FREE & easy returns!</p>
+            <p>LEARN ABOUT UNIQUE RETURNS POIICY</p>
+           
+        </div>
+    </div>
+    
+    <!-- container14-->
+    <div id="container14">
+        <p>About Our Holiday Gift Guide</p>
+
+        <p>Zappos.com has Christmas gift ideas for everyone on your holiday shopping list. While sneakers and slippers are the best shoe gift ideas, we think stud earrings, cuff links, watches, and sunglasses make great stocking stuffers! These are just a few of our best Christmas gifts ideas for 2021.</p>
+
+        <p>Plus, we’ve stocked up on picture-perfect pajamas for kids (and adults), so everyone can look their best on Christmas morning while keeping it cozy during those long winter months</p>
+
+        <p>We know shopping for holiday gifts can be equal parts exciting and exhausting, which is why we’ve put together some quick ideas for the people in your life…</p>
+
+        <p>Need Christmas gift ideas for Mom? We hear jewelry, handbags, and top-rated running shoes are on her must-have list! Boots also make excellent Christmas gifts for her!</p>
+
+        <p>Need help finding Christmas gifts for Dad? Fear not, we’ve got wallets, ties, and jeans in his favorite fits! Come to think of it, those make great Christmas gifts for boyfriends and amazing Christmas gifts for men!</p>
+
+        <p>Whether you’re choosing gifts for her, gifts for him, or gifts for kids, just pick out something that matches their personality or stock up on styles from their favorite brands. UGG®, Converse, The North Face, Vans, and HOKA ONE ONE® are popular year-round, and there are a lot of gift options for men, women, and kids within each brand.</p>
+
+        <p>And if all else fails, Zappos Gift Cards are great holiday gifts for coworkers <span>Zappos Gift Cards </span>—and well, anyone—meanwhile, Zappos eGift Cards (delivered via email) <span>Zappos eGift Cards </span>are the perfect last-minute Christmas gifts for the whole family! You can’t go wrong with these gifts for the holidays!</p>
+        
+    </div>
+
+    <!-- footer -->
+    <div id="footer">
+        <div>
+          <form>
+              <label>Make your inbox happy by joining our exclusive newsletter</label>
+              <br>
+              <label>Email</label>
+              <br>
+              <input type="text" placeholder="Email address"/>
+              <input type="text" value="SIGN UP TODAY"/>
+          </form>
+
+
+            <div>
+                <div>
+                    <p>Explore Zappos</p>
+                    <div>Brands</div>
+                    <div>Clothing</div>
+                    <div>The Style Room</div>
+                    <div>Eyewear</div>
+                    <div>New Arrivals</div>
+                    <div>Outdoor</div>
+                    <div>Rideshop</div>
+                    <div>Running</div>
+                    <div>Jackets</div>
+                    <div>Leather Jackets</div>
+                    <div>Rain Jackets</div>
+                    <div>Shoes</div>
+                    <div>Watches</div>
+                    <div>Wedding</div>
+                    <div>Denim Jackets</div>
+                    <div>Zappos Adaptive</div>
+                    <div>Education & Military Program</div>
+                    <div>All Departments</div>
+                    
+                </div>
+                  
+
+                <div>
+                    <p><span>Customer Service</span></p>
+                    <div>FAQS</div>
+                    <div>Contact Info</div>
+                    <div>Ayuda en espanol</div>
+                    <div>Shipping And Returns</div>
+                    <div>About Proposition 65</div>
+                    <br>
+                    <br>
+                    <div><span>Fit Info</span></div>
+                    <br>
+                    <div>Measurement Guide</div>
+                    <div>Size Conversation</div>
+                    <div>Measure Your Bra Size</div>
+                   
+
+                </div>
+
+                <div>
+                    <p>About Zappos</p>
+                    <div>About</div>
+                    <div>Beyond The Box Blog</div>
+                    <div>Zappos for Goods</div>
+                    <div>Tours</div>
+                    <div>Get the Zappos Mobile app</div>
+                    <div>Amazon Prime Benefits</div>
+                    <div>Zappos VIP Benefits</div>
+                    <div>Powered by Zappos</div>
+                    <div>Coupons</div>
+                    <div>Accessibilty statemnet</div>
+                    <div>Accessibilty Survey</div>
+                    <div>Resources</div>
+                    <div>Associates Program</div>
+                    <div>Jobs</div>
+                    <div>Press Kit</div>
+                    <div>Glossary of Terms</div>
+                    <div>Site Map</div>
+                   
+                </div>
+
+                <div>
+                   
+                    <div>
+                        <p>Your Voice Matter</p>
+                        <p>We'd love to learn more about your shopping experiences on Zappos.com and how we can improve!</p>
+                        <input type="text" value="TAKE SURVEY"/>
+                        
+
+                    </div>
+                    <div> 
+                        <p>Connect With Us</p>
+                        <div>
+                            <img src="https://t4.ftcdn.net/jpg/02/85/44/69/360_F_285446949_eVkqwuNjPXLwR72oq0ctYltBCIflCbwh.jpg"/>
+                        </div>
+                    </div>
+                   
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+
+
+</body>
+</html>
+<script>
+    var text=document.getElementById("crt");
+    text.textContent="my cart";
+    function dress(){
+        document.getElementsByClassName("dress");
+        window.location.href="product_page.html";
+    }
+
+</script>
